@@ -4,9 +4,10 @@ require 'minitest/autorun'
 require 'minitest/pride'
 require 'pry'
 
-class ScrabbleTest < Minitest::Test
-  def test_it_can_score_a_single_letter
+describe Scrabble do
+  it 'can_score_a_single_letter' do
     assert_equal 1, Scrabble.new.score("a")
     assert_equal 4, Scrabble.new.score("f")
   end
+
 end
