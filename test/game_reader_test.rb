@@ -4,6 +4,6 @@ require 'minitest/autorun'
 require 'minitest/pride'
 require 'pry'
 
-class GameReaderTest < Minitest::Test
+describe GameReader do
 
 end

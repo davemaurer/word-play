@@ -4,6 +4,6 @@ require 'minitest/autorun'
 require 'minitest/pride'
 require 'pry'
 
-class WordListTest < Minitest::Test
+describe WordList do
 
 end

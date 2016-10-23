@@ -4,6 +4,6 @@ require 'minitest/autorun'
 require 'minitest/pride'
 require 'pry'
 
-class WordFinderTest < Minitest::Test
+describe WordFinder do
 
 end

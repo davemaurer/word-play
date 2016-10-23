@@ -14,5 +14,4 @@ describe Scrabble do
     assert_equal 7, Scrabble.new.score("string")
     assert_equal 6, Scrabble.new.score("yes")
   end
-
 end
