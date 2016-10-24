@@ -1,7 +1,16 @@
 class Scrabble
   def score(word)
-    letters = word.chars.map(&:upcase)
-    letters.map { |letter| point_values[letter] }.reduce(&:+)
+    if word == "" || word == nil
+      return 0
+    end
+    letters = word.upcase.chars # take word and make it all capitals and chop it up.
+    mapped = letters.map do |letter|
+      point_values[letter] # give me the value of each letter in the point values
+      # hash as it iterates through and hits each letter
+    end
+    mapped.reduce do |sum, num|
+      sum + num
+    end
   end
 
   def point_values
